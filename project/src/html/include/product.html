@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/css/product.css" />
+	<script src="/lib/requirejs/require.min.js" data-main="/js/product"></script>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+	</head>
+
+	<body>
+		<header></header>
+
+		<main>
+			<div class="wrap">
+				<div class="pro_top">
+					<a href="/index.html" target="_blank">首页</a>&gt;
+					<a href="/html/include/list.html">产品系列</a>&gt; 特步 男子跑鞋 19秋冬新款全掌气垫缓震轻便运动跑步鞋881119119283
+				</div>
+				<div class="content">
+
+				</div>
+			</div>
+		</main>
+
+		<footer></footer>
+		<!--模板-->
+		<script type="text/html" id="product-template">
+
+			<div class="pro-left">
+				<!--<div class="zoom">
+		                	<img src="{{img1}}"/>
+		                </div>-->
+				<div>
+					<img class="zoom-img" src="{{zoomImgs[0].middle}}" data-zoom-image="{{zoomImgs[0].big}}" />
+					<div id="gal1">
+						{{each zoomImgs img}}
+						<a href="#" data-image="{{img.middle}}" data-zoom-image="{{img.big}}">
+							<img src="{{img.small}}" />
+						</a>
+						{{/each}}
+					</div>
+				</div>
+
+				<div class="herb_icon">
+					<a href="javascript:;"><img src="http://image.xtep.com.cn/Util/images/product/zy_icon.png" alt="官方直营">官方直营</a>
+					<a href="javascript:;"><img src="http://image.xtep.com.cn/Util/images/product/zp_icon.png" alt="正品保证">正品保证</a>
+					<a href="javascript:;"><img src="http://image.xtep.com.cn/Util/images/product/th_icon.png" alt="七天退换">七天退换</a>
+					<a href="javascript:;"><img src="http://image.xtep.com.cn/Util/images/product/fx_icon.png" alt="分享">分享</a>
+					<a href="javascript:AddFavorite(window.location,document.title);"><img src="http://image.xtep.com.cn/Util/images/product/sc_icon.png" alt="收藏商品">收藏商品</a>
+				</div>
+			</div>
+			<!--右边介绍-->
+			<div class="pro_right">
+				<div class="pro_main">
+					<h2>{{title}}</h2>
+					<div class="id" style="display: none;">{{id}}</div>
+					<div class="price">
+						<p>官方折扣价 <i> ¥</i><b>{{price}}</b>
+							<a href=""><img src="/images/prod/coupons-btn-pc.png" /></a>
+						</p>
+						<ul class="deteil flex">
+							<li>累计评价：<span>{{comments}}</span></li>
+							<li>累计售出：<span>{{sales}}</span></li>
+							<li>赠送积分：<span>{{points}}</span></li>
+						</ul>
+						<p>促销信息：</p>
+					</div>
+					<div class="pro_color">
+						<span>颜 色：</span>
+						<ul class="color">
+							<li class="item_select">
+								<a href=""><img src="{{zoomImgs[0].small}}" /></a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="pro_size">
+						<span>尺 码：</span>
+						<ul class="size">
+							<li class="item select">
+								<a href="">{{size}}码</a>
+							</li>
+							<li class="item ">
+								<a href="">{{size}}码</a>
+							</li>
+							<li class="item ">
+								<a href="">{{size}}码</a>
+							</li>
+							<li class="item ">
+								<a href="">{{size}}码</a>
+							</li>
+							<li class="item ">
+								<a href="">{{size}}码</a>
+							</li>
+						</ul>
+						<i>尺码详情</i>
+					</div>
+					<div class="pro_count">
+						<span>我要买：</span>
+						<a href="" class="min">-</a>
+						<input type="text" name="" id="" value="1" class="inputamount"/>
+						<a href="" class="max">+</a> <i> 件</i>
+						<span >(库存<b class="whouse">{{sales}}</b>件)</span>
+					</div>
+				</div>
+				<div class="choose_button">
+					<a class="add_car" href="/html/include/cart.html" target="_blank">加入购物车</a>
+					<a class="buynow" href="/html/include/cart.html" target="_blank">立即购买</a>
+				</div>
+			</div>
+		</script>
+
+	</body>
+
+</html>

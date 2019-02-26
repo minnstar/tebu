@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="/css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/cart.css"/>
+	<script src="/lib/requirejs/require.min.js" data-main="/js/cart"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<div class="step">
+				<div class="inner">
+					<img src="/images/cart/Step.jpg"/>
+				</div>
+			</div>
+			<div class="wrap">
+				<span class="mycar">我的购物车</span>
+				<div class="empty" style="display: none;">
+						<h2>您的购物车空空如也！<a href="/html/include/list.html">点击此处选购</a></h2>						
+				</div>
+				<div class="cart hidden">					
+					<table class="cartb" cellspacing="none" cellpadding="0">
+						<thead>							
+						     <tr>
+						       <td><label><input type="checkbox" name="checkbox" class="selectAll">全选</label></td>
+						       <td>商品</td>						      
+						       <td>单价</td>
+						       <td width="95">数量</td>						      
+						       <td>小计</td>
+						       <td>操作</td>
+						     </tr>						    
+						</thead>
+						<tbody class="cart-body">
+							<!--<tr>
+						       <td><input type="checkbox" class="check" > 						            
+						       </td>
+						       <td class="mainpt">						           
+						        <img src="/images/cart/a1.jpg" class="img">
+						       <a href="/html/include/product.html" target="_blank">特步 男子跑步鞋春季款 全掌气垫轻便飞织跑鞋982119119528 </a>
+						       <br>
+							       颜色：黑灰 尺码：44码
+						       </td>						       
+						       <td>￥239.00 </td>						       
+						       <td class="count">						        
+						       <a href="" class="btnDown" data-price="239.00"  data-id="49178" >-</a>						       
+						       <input type="text" value="1" class="pronumber" >						        
+						       <a href="" class="btnUp" data-price="239.00"  data-id="49178" >+</a>						       
+						       </td>						      
+						       <td id="TDPrice_49178">239.00</td>							  
+						       <td><a class="delete" href="" data-id="49178">删除</a></td>
+						     </tr>							     -->
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="4">总计：</td>
+								<td colspan="2" class="alltotal">0.00</td>
+							</tr>							
+						</tfoot>
+					</table>
+				</div>
+				<div class="js">
+					<a href="">去结算</a>
+				</div>
+			</div>
+			
+		</main>
+		<footer></footer>
+		<script type="text/html" id="cart-template">
+			{{each cart prod}}
+			<tr>
+		       <td><input type="checkbox" class="check" ></td>
+		       <td class="id" style="display: none;">{{prod.id}}</td>
+		       <td class="mainpt">						           
+		        <img src="{{prod.img}}" class="img">
+		       <a href="/html/include/product.html?={{prod.id}}" target="_blank">{{prod.title}}</a>
+		       <br>
+			       尺码：{{prod.size}}
+		       </td>						       
+		       <td>￥{{prod.price}} </td>						       
+		       <td class="count">						        
+		       <a href="" class="btnDown" data-price="239.00">-</a>						       
+		       <input type="text" value="{{prod.amount}}" class="amount">						        
+		       <a href="" class="btnUp" data-price="239.00">+</a>						       
+		       </td>						      
+		       <td class="total">{{(prod.price*prod.amount).toFixed(2)}}</td>							  
+		       <td><a class="delete" href="" >删除</a></td>
+		    </tr>		
+			{{/each}}
+		</script>
+	</body>
+</html>

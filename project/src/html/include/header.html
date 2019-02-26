@@ -1,0 +1,129 @@
+	<link rel="stylesheet" href="/css/header-and-footer.css" />
+	<div class="container">
+		<div class="header_top">
+			<!--//header第一行-->
+			<div class="header-top-left">			
+					<ul class="headerwell">
+						<li class="wellcome"><span></span>您好，欢迎光临特步官方商城！</li>
+						<li class="reg-log"><span class="reg"><a href="/html/include/login.html" target="_blank">注册</a></span>	 
+							<span class="log"><a href="/html/include/login.html" target="_blank">登录</a></span>
+						</li>
+					</ul>
+			</div>
+			<div class="header-top-right">			
+					<ul>
+						<li><a href="#">我的特步</a></li>
+						<li><a href="#">官网品牌</a></li>
+						<li id="phone"><a href="#"><span></span>手机特步<i></i></a></li>
+						<li id="car"><a href="/html/include/cart.html" target="_blank"><i></i>购物车 (<span class="shuliang"> </span>) 件</a></li>						
+					</ul>				
+			</div>			
+		</div>
+		<!--第二行搜索行-->
+		<div class="header_middle">
+			<div class="logo">
+				<a href=""><img src="/images/index/logo.png"/></a>
+			</div>
+			<div class="search">	
+				<div class="search_top">
+					<input type="text" name="" class="sou" value="" />
+					<input type="submit" id="sousou" value="搜索"/>
+					<div class="suggest"></div>	
+				</div>								
+				<div class="hotwords">
+					<a href="">热卖搜索:</a>
+					<a href="/html/include/list.html" target="_blank">跑鞋</a>
+					<a href="/html/include/list.html" target="_blank">板鞋</a>
+					<a href="/html/include/list.html" target="_blank">21代风火鞋</a>
+					<a href="/html/include/list.html" target="_blank">动力X</a>
+					<a href="/html/include/list.html" target="_blank">明星同款</a>					
+				</div>				
+			</div>
+			<div class="huiyuan">
+					<a href=""><img src="/images/index/huiyuan.jpg"/></a>					
+			</div>
+		</div>			
+	</div>
+<!--导航条-->
+<div class="nav">
+		<div class="wrap">
+			<div class="menu">
+				全部商品分类		
+				<div class="select">
+					<dl>
+						<dt><a href="">男鞋</a></dt>
+						<dd>
+							<a href="">跑步鞋</a> <a href="">休闲鞋</a>
+							<a href="">板鞋</a> <br /><a href="">帆布鞋</a>
+							<a href="">篮球鞋</a> <a href="">足球鞋</a> <a href="">棉鞋</a>						
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="">女鞋</a></dt>
+						<dd>
+							<a href="">跑步鞋</a> <a href="">休闲鞋</a>
+							<a href="">板鞋</a> <br /><a href="">帆布鞋</a>
+							<a href="">棉鞋</a>						
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="">男装</a></dt>
+						<dd>
+							<a href="">针织衫/卫衣/长T</a> <a href="">长裤</a><br />
+							<a href="">风衣夹克</a> <a href="">羽绒服</a>
+							<a href="">运动套装</a> <br /><a href="">运动T恤</a>	<a href="">短裤</a>				
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="">女装</a></dt>
+						<dd>
+							<a href="">针织衫/卫衣/长T</a> <a href="">长裤</a><br />
+							<a href="">风衣夹克</a> <a href="">羽绒服</a>
+							<a href="">运动套装</a> <br /><a href="">运动T恤</a>	<a href="">短裤</a>				
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="">童鞋</a></dt>
+						<dd>
+							<a href="">跑步鞋</a> <a href="">休闲鞋</a>
+							<a href="">板鞋</a> <br /><a href="">健康鞋</a>
+							<a href="">棉鞋</a>						
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="">童装</a></dt>
+						<dd>
+							<a href="">套装</a> <a href="">羽绒服棉服</a>
+							<a href="">外套/夹克</a>				
+						</dd>
+					</dl>
+				</div>
+			</div>
+			
+			<ul class="">
+				<li><a href="">首页</a></li>
+				<li><a href="/html/include/list.html" target="_blank">跑步</a></li>
+				<li><a href="/html/include/list.html" target="_blank">男子</a></li>
+				<li><a href="/html/include/list.html" target="_blank">女子</a></li>
+				<li><a href="/html/include/list.html" target="_blank">儿童</a></li>
+				<li><a href="/html/include/list.html" target="_blank">配件</a></li>
+				<li><a href="/html/include/list.html" target="_blank">马拉松</a></li>
+				<li><a href="/html/include/list.html" target="_blank"><i>团购定制</i></a></li>
+			</ul>
+		</div>
+</div>
+<!--吸顶效果-->
+<script type="text/javascript">
+	var wrap = document.getElementsByClassName("wrap")[0];
+	var ws = wrap.offsetTop;	
+	window.onscroll=function(){
+		var scroll=document.documentElement.scrollTop
+		
+		var st=document.documentElement.scrollTop||document.body.scrollTop;		
+		if(scroll>ws){			
+			wrap.className="wrap wrap-fixed";
+		}else{
+			wrap.className="wrap";
+		}
+	}
+</script>

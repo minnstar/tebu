@@ -1,0 +1,43 @@
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after{
+	content: '';
+}
+.flex{
+	display: flex;
+}
+.f-a-c{
+	align-items: center;
+}
+.f-s-c{
+	justify-content: center;
+}
+.f-s-r{
+	justify-content: space-around;
+}
+.f-s-b{
+	justify-content: space-between;
+}
+*{
+	border-box:box-sizing;
+	padding: 0;margin: 0;
+	}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.left{
+	float: left;
+}
+
+.hidden{
+	display: none;
+}
