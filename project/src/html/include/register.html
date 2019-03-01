@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="/css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/register.css"/>	
+	<link rel="shortcut icon" href="http://www.xtep.com.cn/favicon.ico">		
+	<script src="/lib/requirejs/require.min.js" data-main="/js/register"> </script>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>注册</title>
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<div class="wrap container">
+				<!--注册-->
+				<div class="register" >
+					<span class="close"></span>
+					<div class="reg_left">
+						<h4>快速注册</h4>
+						<div class="alert hidden">注册失败，请重新填写!</div>
+						<div class="alertpass alert hidden">密码不一致，请重新填写!</div>
+						<div class="alerttel alert hidden">号码有误，请重新填写!</div>
+						<form  method="post" class="register-form">
+							<ul>
+								<li><label for="">*用户名:</label><input type="text" value=""name="username"/> </li>
+								<li><label for="">*密码:</label><input type="password" value="" name="password" id="pass1"/> </li>
+								<li><label for="">*确认密码:</label><input type="password" value="" id="pass2"/> </li>
+								<li><label for="">*手机号:</label><input type="text" value="" name="tel" id="tel"/> </li>
+								<li><label for="">*验证码:</label><input type="text" value="" id="usercode"/>
+								<img src="/images/index/mobile_icon.png" id="code"/> </li>									
+							</ul>
+							<div class="reg_bottom">
+								<input type="checkbox" id="" name="check"/><label for="">我已看过并接受《特步用户协议》</label>
+								<input type="submit" name="" id="reg_sub" value="立 即 注 册" />
+							</div>							
+						</form>
+					</div>
+					<div class="reg_right">
+						<p>已有特步账号？</p>
+						<a href="/html/include/login.html">立 即 登 录</a>
+						<p class="pp">其他登录方式 ：</p>
+						<div class="icon">
+							<span></span> <i></i>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</main>
+		<footer></footer>
+		
+	</body>
+</html>

@@ -1,13 +1,15 @@
 <?php
 	header("Access-Control-Allow-Origin:*");
-include"conn.php";//引入连接数据库
+include("../api/conn.php");//引入连接数据库
 
 //获取用户数据
-$username=$_POST["username"];
-$tel=$_POST["tel"];
-$password=$_POST["password"];
+$username = $_POST["username"];
+$password = $_POST["password"];
+$tel = $_POST["tel"];
+
 //保存语句
-$sql="INSERT INTO users(username,tel,password)VALUES('$username','$tel','$password') ";
+$sql="INSERT INTO ueser (username,password,tel)VALUES('$username','$password','$tel') ";
+
 //执行语句
 $result = mysql_query($sql);
 	$array = array("res_code"=>1, "res_error"=>"");

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{text-decoration: none;}
+
+main{
+    width:100%;
+    height: 460px;
+    background: url(/images/login/banner.jpg) no-repeat center;
+    
+    .wrap{
+        height: 460px;      
+    }
+}
+
+main .wrap .register{
+    width: 945px;height: 440px;
+    background: white;
+    margin:10px auto;
+    border: 1px solid #9b9b9b;
+    .close{
+        float: right;padding-right: 20px;
+        font-size: 20px;cursor: pointer;color: #9b9b9b;
+    }
+    .reg_left{       
+        width: 560px;height: 440px;
+        border-right: 1px solid #9b9b9b;
+        float: left;
+        h4{
+            padding:20px 150px;
+            height: 20px;line-height: 50px;
+            color: #727283;font-size: 15px;
+            }
+        .alert{
+            color:#cc4d40;
+            text-align: center;
+            font-weight: 600;padding-left: 30px;
+        }
+        ul{
+            width: 310px;
+            height: 245px;
+            margin:0 auto;
+            li{
+                height: 45px;line-height: 45px;
+                color: #9b9b9b;
+                font-size: 12px;
+                label{
+                    display: inline-block;
+                    width: 75px;
+                    text-align: right;
+                }
+                input{
+                    height: 30px;width: 220px;
+                    margin-left: 5px;
+                }
+                #usercode{
+                    width: 130px;                  
+                }
+                #code{
+                    width: 80px;height: 25px;
+                    position: relative;
+                    top:7px;
+                    border:1px solid black;
+                    }
+            }
+        }
+        .reg_bottom{
+            width: 300px;
+            margin: 0 auto;
+            text-align: right;
+            
+            label{
+                color: #9b9b9b;
+                font-size: 12px;
+            }
+            #reg_sub{
+                width: 220px;
+                height: 32px;
+                background: #cc4d40;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                margin-top:20px;
+                cursor: pointer;
+            }
+        }
+    }
+    .reg_right{
+       float: right;
+       width: 300px;
+       margin-top: 50px;
+        p{
+          color: #9b9b9b;
+          font-size: 12px;
+          height: 40px;line-height: 40px;
+        }
+        .pp{
+           float: left;
+            width: 100px;
+           
+        }
+        a{
+            display: inline-block;
+            width: 220px;
+            height: 32px;line-height: 32px;
+            background: #cc4d40;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+        }
+        .icon{
+            margin-top:6px;
+            float: left;
+            width:100px;height: 32px;          
+            span{
+                display: inline-block;
+                width: 32px;height: 32px;
+                background: url(/images/login/un_login_third.png) center;
+                background-position: -35px 141px;
+                cursor: pointer;
+            }
+            i{
+                display: inline-block;
+                width: 32px;height: 32px;
+                background: url(/images/login/un_login_third.png) center;
+                background-position: -104px 141px;
+                margin-left: 10px;  
+                cursor: pointer;        
+            }
+        }
+    }
+}
+.hidden{
+    display: none;
+}

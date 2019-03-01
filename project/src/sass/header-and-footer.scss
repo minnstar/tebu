@@ -14,7 +14,7 @@ $color:#b61d1d;
     a:hover{color: $color;}
     .header-top-left{
         float: left;
-        width: 330px;
+        width: 350px;
         font-size: 12px;
         li{
             float: left;
@@ -61,8 +61,9 @@ $color:#b61d1d;
     height: 100px;
     .logo{
         width:240px;
-        padding-left:110px;margin-top: 30px;
+        margin-top: 30px;
         float: left;
+        margin-left: -240px;
     }
     .search{
         float: left;
@@ -88,9 +89,11 @@ $color:#b61d1d;
             .suggest{
                 width: 375px;
                 height: 200px;
-                font-size: 12px;
-                background: rgba(pink,0.5);                
-                display: none;               
+                font-size: 14px;
+                background: white;                
+                display: none;      
+                position:absolute;
+                z-index:3;         
             }
         }
         .hotwords{
@@ -102,7 +105,7 @@ $color:#b61d1d;
                }
         }
     }
-    .huiyuan{padding-top: 20px;}
+    .huiyuan{padding-top: 20px;float: right;padding-right: 57px;}
 }
 //导航
 .nav{
@@ -208,7 +211,7 @@ $color:#b61d1d;
    .footer_img{
         width: 100%;height: 45px;
         background: #191d20;
-        .img{margin:0 auto;}
+        .img{margin:0 auto;width: 1200px;}
     }
     .footer_msg{
         height: 100px;

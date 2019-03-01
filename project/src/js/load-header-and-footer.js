@@ -48,6 +48,10 @@ define(["jquery"],function(){
 				});
 				
 				$(".suggest").show().html(html);
+				if(word.length == 0){$(".suggest").hide()};
+				$(".sou").on("blur" ,()=>{
+					$(".suggest").hide();
+				})
 			});
 		},
 		totalCar(){
